@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - ASUS Store</title>
+    <meta
+      name="description"
+      content="Learn about ASUS and our commitment to innovation"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="../index.html" class="logo">
+            <span>ASUS India</span>
+          </a>
+
+          <nav class="nav-desktop">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Products</a>
+            <a href="about.html" class="nav-link active">About</a>
+            <a href="support.html" class="nav-link">Support</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+
+          <div class="header-actions-desktop">
+            <button class="icon-button" aria-label="Search">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </button>
+            <a href="admin.html" class="icon-button" aria-label="Admin">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </a>
+            <a
+              href="cart.html"
+              class="icon-button cart-button"
+              aria-label="Shopping Cart"
+            >
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                ></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span class="cart-badge" id="cartBadge">0</span>
+            </a>
+          </div>
+
+          <div class="header-actions-mobile">
+            <a href="cart.html" class="mobile-cart">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                ></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span class="cart-badge" id="cartBadgeMobile">0</span>
+            </a>
+            <button
+              class="menu-toggle"
+              id="menuToggle"
+              aria-label="Toggle Menu"
+            >
+              <svg
+                class="icon menu-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+              <svg
+                class="icon close-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+          <a href="../index.html" class="mobile-nav-link">Home</a>
+          <a href="products.html" class="mobile-nav-link">Products</a>
+          <a href="about.html" class="mobile-nav-link active">About</a>
+          <a href="support.html" class="mobile-nav-link">Support</a>
+          <a href="contact.html" class="mobile-nav-link">Contact</a>
+          <a href="admin.html" class="mobile-nav-link">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Page Header -->
+      <section class="content-header">
+        <div class="container">
+          <div class="animate-fade-up">
+            <h1 class="content-title">About ASUS</h1>
+            <p class="content-description">
+              In Search of Incredible - Our commitment to innovation and
+              excellence
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Sections -->
+      <div class="container content-page">
+        <section class="content-section animate-fade-up">
+          <h2 class="content-section-title">Our Story</h2>
+          <p class="content-text">
+            Founded in 1989, ASUS has grown to become one of the world's leading
+            technology companies. Our name comes from Pegasus, the winged horse
+            in Greek mythology, representing the spirit of innovation and the
+            pursuit of perfection.
+          </p>
+          <p class="content-text">
+            From our humble beginnings as a motherboard manufacturer, we've
+            expanded to create a diverse range of products including laptops,
+            desktops, graphics cards, monitors, and networking equipment. Today,
+            ASUS products are used by millions of people worldwide.
+          </p>
+        </section>
+
+        <section
+          class="content-section animate-fade-up"
+          style="animation-delay: 0.1s"
+        >
+          <h2 class="content-section-title">Our Mission</h2>
+          <p class="content-text">
+            "In Search of Incredible" is more than just our tagline—it's our
+            philosophy. We believe in pushing the boundaries of what's possible,
+            creating products that inspire and empower our customers to achieve
+            their goals.
+          </p>
+          <p class="content-text">
+            Whether you're a gamer seeking the ultimate performance, a creative
+            professional demanding color accuracy, a business executive
+            requiring reliability, or a student looking for value, ASUS has a
+            solution designed specifically for you.
+          </p>
+        </section>
+
+        <section
+          class="content-section animate-fade-up"
+          style="animation-delay: 0.2s"
+        >
+          <h2 class="content-section-title">Innovation & Quality</h2>
+          <p class="content-text">
+            At ASUS, quality is paramount. Every product undergoes rigorous
+            testing to ensure it meets our high standards. We invest heavily in
+            research and development, holding thousands of patents and winning
+            numerous industry awards.
+          </p>
+          <p class="content-text">
+            Our commitment to innovation has led to groundbreaking products like
+            the ROG gaming series, ZenBook ultraportables, and ProArt creator
+            laptops. We continue to pioneer new technologies that shape the
+            future of computing.
+          </p>
+        </section>
+
+        <section
+          class="content-section animate-fade-up"
+          style="animation-delay: 0.3s"
+        >
+          <h2 class="content-section-title">Sustainability</h2>
+          <p class="content-text">
+            We recognize our responsibility to the environment and are committed
+            to sustainable practices. From energy-efficient products to
+            eco-friendly packaging, we're working to reduce our environmental
+            impact while delivering exceptional technology.
+          </p>
+          <p class="content-text">
+            Our goal is to create products that not only perform exceptionally
+            but also contribute to a more sustainable future for generations to
+            come.
+          </p>
+        </section>
+
+        <section
+          class="content-section animate-fade-up"
+          style="animation-delay: 0.4s"
+        >
+          <h2 class="content-section-title">Join Our Journey</h2>
+          <p class="content-text">
+            Whether you're looking for your next laptop, seeking career
+            opportunities, or interested in partnering with us, we invite you to
+            be part of the ASUS story. Together, we can continue to push the
+            boundaries of innovation.
+          </p>
+          <div style="margin-top: 2rem">
+            <a
+              href="products.html"
+              class="btn btn-primary btn-lg"
+              style="margin-right: 1rem"
+            >
+              Explore Products
+            </a>
+            <a href="contact.html" class="btn btn-outline btn-lg">
+              Contact Us
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="../index.html" class="footer-logo">
+              <span>ASUS</span>
+            </a>
+            <p class="footer-tagline">
+              In Search of Incredible. Pushing the boundaries of technology
+              since 1989.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Products</h3>
+            <ul class="footer-links">
+              <li><a href="products.html?category=gaming">Gaming</a></li>
+              <li><a href="products.html?category=business">Business</a></li>
+              <li><a href="products.html?category=creator">Creator</a></li>
+              <li><a href="products.html?category=student">Student</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Support</h3>
+            <ul class="footer-links">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="warranty.html">Warranty</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="warranty.html">Returns</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Company</h3>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html">Careers</a></li>
+              <li><a href="about.html">Press</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2024 ASUS Store Demo. All rights reserved. This is a demo project.
+          </p>
+          <div class="footer-legal">
+            <a href="faq.html">Privacy Policy</a>
+            <a href="faq.html">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/state.js"></script>
+    <script src="../js/ui.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

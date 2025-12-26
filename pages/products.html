@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Laptops - ASUS Store</title>
+    <meta
+      name="description"
+      content="Explore our complete collection of premium laptops"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="../index.html" class="logo">
+            <span>ASUS India</span>
+          </a>
+
+          <nav class="nav-desktop">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link active">Products</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="support.html" class="nav-link">Support</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+
+          <div class="header-actions-desktop">
+            <button class="icon-button" aria-label="Search">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </button>
+            <a href="admin.html" class="icon-button" aria-label="Admin">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </a>
+            <a
+              href="cart.html"
+              class="icon-button cart-button"
+              aria-label="Shopping Cart"
+            >
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                ></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span class="cart-badge" id="cartBadge">0</span>
+            </a>
+          </div>
+
+          <div class="header-actions-mobile">
+            <a href="cart.html" class="mobile-cart">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                ></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span class="cart-badge" id="cartBadgeMobile">0</span>
+            </a>
+            <button
+              class="menu-toggle"
+              id="menuToggle"
+              aria-label="Toggle Menu"
+            >
+              <svg
+                class="icon menu-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+              <svg
+                class="icon close-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+          <a href="../index.html" class="mobile-nav-link">Home</a>
+          <a href="products.html" class="mobile-nav-link active">Products</a>
+          <a href="about.html" class="mobile-nav-link">About</a>
+          <a href="support.html" class="mobile-nav-link">Support</a>
+          <a href="contact.html" class="mobile-nav-link">Contact</a>
+          <a href="admin.html" class="mobile-nav-link">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Page Header -->
+      <section class="products-page-header">
+        <div class="container">
+          <div class="animate-fade-up" style="max-width: 48rem">
+            <h1 class="products-page-title">All Laptops</h1>
+            <p class="products-page-description">
+              Explore our complete collection of premium laptops
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section class="products-section">
+        <div class="container">
+          <!-- Filters Bar -->
+          <div class="filters-bar">
+            <!-- Search -->
+            <div class="search-wrapper">
+              <svg
+                class="search-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+              <input
+                type="text"
+                id="searchInput"
+                class="search-input"
+                placeholder="Search laptops..."
+              />
+              <button
+                id="searchClear"
+                class="search-clear"
+                style="display: none"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Sort -->
+            <div class="select-wrapper">
+              <select id="sortSelect" class="select">
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name">Name</option>
+              </select>
+            </div>
+
+            <!-- Mobile Filter Toggle -->
+            <button id="filterToggle" class="btn btn-outline hide-desktop">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="4" y1="21" x2="4" y2="14"></line>
+                <line x1="4" y1="10" x2="4" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="3"></line>
+                <line x1="20" y1="21" x2="20" y2="16"></line>
+                <line x1="20" y1="12" x2="20" y2="3"></line>
+                <line x1="1" y1="14" x2="7" y2="14"></line>
+                <line x1="9" y1="8" x2="15" y2="8"></line>
+                <line x1="17" y1="16" x2="23" y2="16"></line>
+              </svg>
+              Filters
+            </button>
+          </div>
+
+          <!-- Products Layout -->
+          <div class="products-layout">
+            <!-- Sidebar -->
+            <aside id="sidebar" class="sidebar hidden-mobile">
+              <div class="sidebar-sticky">
+                <h3 class="sidebar-title">Categories</h3>
+                <div class="filter-buttons">
+                  <button class="filter-button active" data-category="all">
+                    All Products
+                  </button>
+                  <button class="filter-button" data-category="gaming">
+                    Gaming
+                  </button>
+                  <button class="filter-button" data-category="business">
+                    Business
+                  </button>
+                  <button class="filter-button" data-category="creator">
+                    Creator
+                  </button>
+                  <button class="filter-button" data-category="student">
+                    Student
+                  </button>
+                </div>
+              </div>
+            </aside>
+
+            <!-- Products Main -->
+            <div class="products-main">
+              <p id="productsCount" class="products-count">12 products</p>
+              <div id="productsGrid" class="products-grid-3">
+                <!-- Products will be rendered here by JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="../index.html" class="footer-logo">
+              <span>ASUS</span>
+            </a>
+            <p class="footer-tagline">
+              In Search of Incredible. Pushing the boundaries of technology
+              since 1989.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Products</h3>
+            <ul class="footer-links">
+              <li><a href="products.html?category=gaming">Gaming</a></li>
+              <li><a href="products.html?category=business">Business</a></li>
+              <li><a href="products.html?category=creator">Creator</a></li>
+              <li><a href="products.html?category=student">Student</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Support</h3>
+            <ul class="footer-links">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="warranty.html">Warranty</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="warranty.html">Returns</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Company</h3>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html">Careers</a></li>
+              <li><a href="about.html">Press</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2024 ASUS Store Demo. All rights reserved. This is a demo project.
+          </p>
+          <div class="footer-legal">
+            <a href="faq.html">Privacy Policy</a>
+            <a href="faq.html">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/state.js"></script>
+    <script src="../js/ui.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

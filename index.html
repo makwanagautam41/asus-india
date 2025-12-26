@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASUS Store - In Search of Incredible</title>
+    <meta
+      name="description"
+      content="Discover our collection of premium laptops designed for every lifestyle. From gaming to business, find your perfect machine."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="header-content">
+          <!-- Logo -->
+          <a href="index.html" class="logo">
+            <span>ASUS India</span>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="nav-desktop">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="pages/products.html" class="nav-link">Products</a>
+            <a href="pages/about.html" class="nav-link">About</a>
+            <a href="pages/support.html" class="nav-link">Support</a>
+            <a href="pages/contact.html" class="nav-link">Contact</a>
+          </nav>
+
+          <!-- Desktop Actions -->
+          <div class="header-actions-desktop">
+            <button class="icon-button" aria-label="Search">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </button>
+            <a href="pages/admin.html" class="icon-button" aria-label="Admin">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </a>
+            <a
+              href="pages/cart.html"
+              class="icon-button cart-button"
+              aria-label="Shopping Cart"
+            >
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                ></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span class="cart-badge" id="cartBadge">0</span>
+            </a>
+          </div>
+
+          <!-- Mobile Actions -->
+          <div class="header-actions-mobile">
+            <a href="pages/cart.html" class="mobile-cart">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                ></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span class="cart-badge" id="cartBadgeMobile">0</span>
+            </a>
+            <button
+              class="menu-toggle"
+              id="menuToggle"
+              aria-label="Toggle Menu"
+            >
+              <svg
+                class="icon menu-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+              <svg
+                class="icon close-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+          <a href="index.html" class="mobile-nav-link active">Home</a>
+          <a href="pages/products.html" class="mobile-nav-link">Products</a>
+          <a href="pages/about.html" class="mobile-nav-link">About</a>
+          <a href="pages/support.html" class="mobile-nav-link">Support</a>
+          <a href="pages/contact.html" class="mobile-nav-link">Contact</a>
+          <a href="pages/admin.html" class="mobile-nav-link">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle animate-fade-up">In Search of Incredible</p>
+            <h1
+              class="hero-title animate-fade-up"
+              style="animation-delay: 0.1s"
+            >
+              Technology that<br />inspires innovation
+            </h1>
+            <p
+              class="hero-description animate-fade-up"
+              style="animation-delay: 0.2s"
+            >
+              Discover our collection of premium laptops designed for every
+              lifestyle. From gaming to business, find your perfect machine.
+            </p>
+            <div
+              class="hero-actions animate-fade-up"
+              style="animation-delay: 0.3s"
+            >
+              <a href="pages/products.html" class="btn btn-primary btn-lg">
+                Shop Now
+                <svg
+                  class="icon-sm"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="pages/about.html" class="btn btn-outline btn-lg"
+                >Learn More</a
+              >
+            </div>
+          </div>
+
+          <!-- Hero Image -->
+          <div class="hero-image animate-fade-up" style="animation-delay: 0.4s">
+            <div class="hero-image-placeholder">
+              <!-- <svg
+                class="hero-laptop-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg> -->
+              <img src="./images/hero-img.jpg" alt="Hero Image" style="border-radius:10px">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section class="categories-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Browse by Category</h2>
+            <p class="section-description">
+              Find the perfect laptop for your specific needs
+            </p>
+          </div>
+          <div class="categories-grid" id="categoriesGrid">
+            <!-- Categories will be rendered by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products Section -->
+      <section class="featured-section">
+        <div class="container">
+          <div class="section-header-row">
+            <div>
+              <h2 class="section-title">Featured Laptops</h2>
+              <p class="section-description">Our most popular choices</p>
+            </div>
+            <a href="pages/products.html" class="btn btn-outline">
+              View All Products
+              <svg
+                class="icon-sm"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+          <div class="products-grid" id="featuredProducts">
+            <!-- Featured products will be rendered by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust Indicators Section -->
+      <section class="trust-section">
+        <div class="container">
+          <div class="trust-grid" id="trustGrid">
+            <!-- Trust indicators will be rendered by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to upgrade your setup?</h2>
+            <p class="cta-description">
+              Join thousands of satisfied customers who chose ASUS for their
+              computing needs.
+            </p>
+            <a href="pages/products.html" class="btn btn-secondary btn-lg">
+              Explore Our Collection
+              <svg
+                class="icon-sm"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo">
+              <span>ASUS</span>
+            </a>
+            <p class="footer-tagline">
+              In Search of Incredible. Pushing the boundaries of technology
+              since 1989.
+            </p>
+          </div>
+
+          <!-- Products -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Products</h3>
+            <ul class="footer-links">
+              <li><a href="pages/products.html?category=gaming">Gaming</a></li>
+              <li>
+                <a href="pages/products.html?category=business">Business</a>
+              </li>
+              <li>
+                <a href="pages/products.html?category=creator">Creator</a>
+              </li>
+              <li>
+                <a href="pages/products.html?category=student">Student</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Support</h3>
+            <ul class="footer-links">
+              <li><a href="pages/faq.html">FAQ</a></li>
+              <li><a href="pages/warranty.html">Warranty</a></li>
+              <li><a href="pages/contact.html">Contact Us</a></li>
+              <li><a href="pages/warranty.html">Returns</a></li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Company</h3>
+            <ul class="footer-links">
+              <li><a href="pages/about.html">About Us</a></li>
+              <li><a href="pages/about.html">Careers</a></li>
+              <li><a href="pages/about.html">Press</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2024 ASUS Store Demo. All rights reserved. This is a demo project.
+          </p>
+          <div class="footer-legal">
+            <a href="pages/faq.html">Privacy Policy</a>
+            <a href="pages/faq.html">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

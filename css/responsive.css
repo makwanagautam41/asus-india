@@ -1,0 +1,556 @@
+/* Responsive Design - Mobile First */
+
+/* Small devices (576px+) */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* Medium devices (768px+) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* Large devices (992px+) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Extra large devices (1200px+) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* XXL devices (1400px+) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+/* Mobile Menu Responsive Behavior */
+@media (max-width: 767px) {
+    .nav-desktop {
+        display: none !important;
+    }
+
+    .header-actions-desktop {
+        display: none !important;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+/* Tablet and Desktop */
+@media (min-width: 768px) {
+    .header-actions-mobile {
+        display: none !important;
+    }
+
+    .mobile-menu {
+        display: none !important;
+    }
+
+    .mobile-menu-overlay {
+        display: none !important;
+    }
+}
+
+/* Product Grid Responsive */
+@media (max-width: 639px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .products-grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Category Grid Responsive */
+@media (max-width: 767px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .category-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .categories-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+
+    .category-card {
+        padding: 2rem;
+    }
+}
+
+/* Trust Grid Responsive */
+@media (max-width: 767px) {
+    .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .trust-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+}
+
+/* Footer Responsive */
+@media (max-width: 767px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
+
+    .footer-brand {
+        grid-column: span 1;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Hero Section Responsive */
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 5rem 0 8rem;
+    }
+
+    .hero-title {
+        font-size: 2.25rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        padding: 8rem 0;
+    }
+
+    .hero-title {
+        font-size: 3.75rem;
+    }
+
+    .hero-actions {
+        flex-direction: row;
+    }
+
+    .hero-actions .btn {
+        width: auto;
+    }
+}
+
+/* Section Padding Responsive */
+@media (max-width: 767px) {
+
+    .categories-section,
+    .trust-section,
+    .featured-section,
+    .cta-section {
+        padding: 5rem 0;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .cta-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .categories-section,
+    .trust-section,
+    .featured-section,
+    .cta-section {
+        padding: 6rem 0;
+    }
+
+    .section-title {
+        font-size: 1.875rem;
+    }
+
+    .cta-title {
+        font-size: 2.25rem;
+    }
+}
+
+/* Products Page Responsive */
+@media (max-width: 767px) {
+    .filters-bar {
+        flex-direction: column;
+    }
+
+    .select-wrapper {
+        width: 100%;
+    }
+
+    .products-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar.hidden-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .filters-bar {
+        flex-direction: row;
+    }
+
+    .select-wrapper {
+        width: 12rem;
+    }
+
+    .products-layout {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 14rem;
+    }
+
+    .sidebar.hidden-mobile {
+        display: block;
+    }
+}
+
+/* Cart Page Responsive */
+@media (max-width: 1023px) {
+    .cart-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .order-summary {
+        position: static;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cart-layout {
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+    }
+
+    .order-summary {
+        position: sticky;
+        top: 6rem;
+    }
+}
+
+/* Cart Item Responsive */
+@media (max-width: 639px) {
+    .cart-item {
+        flex-direction: column;
+    }
+
+    .cart-item-actions {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Product Detail Responsive */
+@media (max-width: 1023px) {
+    .product-detail-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .product-detail-title {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .product-detail-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .product-detail-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Content Pages Responsive */
+@media (max-width: 767px) {
+    .content-header {
+        padding: 3rem 0;
+    }
+
+    .content-title {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .content-header {
+        padding: 4rem 0;
+    }
+
+    .content-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Toast Responsive */
+@media (max-width: 639px) {
+    .toast-container {
+        left: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+        max-width: none;
+    }
+}
+
+/* Section Header Row Responsive */
+@media (max-width: 767px) {
+    .section-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-header-row {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* Button Responsive */
+@media (max-width: 639px) {
+    .btn-lg {
+        width: 100%;
+    }
+}
+
+/* Product Card Responsive Adjustments */
+@media (max-width: 639px) {
+    .product-card {
+        max-width: 100%;
+    }
+}
+
+/* Utility Classes for Responsive Display */
+.hide-mobile {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .hide-mobile {
+        display: block;
+    }
+}
+
+.hide-desktop {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .hide-desktop {
+        display: none;
+    }
+}
+
+/* Responsive Typography */
+@media (max-width: 639px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 640px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Responsive Spacing */
+@media (max-width: 639px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Tables (if needed) */
+@media (max-width: 767px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Print Styles */
+@media print {
+
+    .header,
+    .footer,
+    .btn,
+    .toast-container {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+    /* Sharper borders and shadows for retina displays */
+    .product-card,
+    .category-card,
+    .cart-item,
+    .summary-card {
+        border-width: 0.5px;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Dark Mode Support (Optional - can be enabled later) */
+@media (prefers-color-scheme: dark) {
+    /* Dark mode styles would go here if needed */
+    /* Currently using light mode as per the React version */
+}
+
+/* Landscape Orientation Adjustments */
+@media (max-width: 767px) and (orientation: landscape) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+
+    /* Larger touch targets for mobile */
+    .btn,
+    .icon-button,
+    .nav-link,
+    .mobile-nav-link {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Remove hover effects on touch devices */
+    .product-card:hover,
+    .category-card:hover,
+    .btn:hover {
+        transform: none;
+    }
+}
+
+/* Small Height Devices */
+@media (max-height: 600px) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+
+    .sticky,
+    .order-summary {
+        position: static;
+    }
+}
