@@ -15,7 +15,14 @@ const products = [
     },
     description:
       "Dominate the competition with the ROG Strix G16, featuring the latest Intel processor and NVIDIA graphics for ultimate gaming performance.",
-    images: ["../images/rog-strix-g16.png", "../images/zenbook-pro-16x.png", "../images/rog-strix-g16.png", "../images/zenbook-pro-16x.png", "../images/rog-strix-g16.png", "../images/zenbook-pro-16x.png"],
+    images: [
+      "../images/rog-strix-g16.png",
+      "../images/zenbook-pro-16x.png",
+      "../images/rog-strix-g16.png",
+      "../images/zenbook-pro-16x.png",
+      "../images/rog-strix-g16.png",
+      "../images/zenbook-pro-16x.png",
+    ],
     inStock: true,
     rating: 4.8,
     reviewCount: 234,

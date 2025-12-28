@@ -12,9 +12,10 @@ function renderProductCard(product, index = 0) {
   card.innerHTML = `
         <a href="product-detail.html?id=${product.id}" class="product-card">
             <div class="product-image-wrapper">
-                ${hasProductImages
-      ? `<img src=${[product.images[0]]} />`
-      : `
+                ${
+                  hasProductImages
+                    ? `<img src=${[product.images[0]]} />`
+                    : `
       <svg
         class="product-laptop-icon"
         viewBox="0 0 24 24"
@@ -27,29 +28,37 @@ function renderProductCard(product, index = 0) {
         <line x1="12" y1="17" x2="12" y2="21"></line>
       </svg>
     `
-    }
+                }
 
-                ${hasOriginalPrice
-      ? '<div class="product-badge">Sale</div>'
-      : ""
-    }
-                ${isOutOfStock
-      ? '<div class="product-badge product-badge-out">Out of Stock</div>'
-      : ""
-    }
+                ${
+                  hasOriginalPrice
+                    ? '<div class="product-badge">Sale</div>'
+                    : ""
+                }
+                ${
+                  isOutOfStock
+                    ? '<div class="product-badge product-badge-out">Out of Stock</div>'
+                    : ""
+                }
             </div>
             <div class="product-content">
                 <p class="product-category">${product.category}</p>
                 <h3 class="product-name">${product.name}</h3>
-                <p class="product-specs">${product.specs.processor} • ${product.specs.ram
-    }</p>
+                <p class="product-specs">${product.specs.processor} • ${
+    product.specs.ram
+  }</p>
                 <div class="product-footer">
                     <div class="product-price-group">
-                        <span class="product-price">₹${product.price.toLocaleString('en-IN')}</span>
-                        ${hasOriginalPrice
-      ? `<span class="product-price-original">₹${product.originalPrice.toLocaleString('en-IN')}</span>`
-      : ""
-    }
+                        <span class="product-price">₹${product.price.toLocaleString(
+                          "en-IN"
+                        )}</span>
+                        ${
+                          hasOriginalPrice
+                            ? `<span class="product-price-original">₹${product.originalPrice.toLocaleString(
+                                "en-IN"
+                              )}</span>`
+                            : ""
+                        }
                     </div>
                     <button 
                         class="btn btn-ghost product-add-btn" 
@@ -127,12 +136,15 @@ function renderCartItem(item, index = 0) {
             </svg>
         </div>
         <div class="cart-item-details">
-            <a href="product-detail.html?id=${item.product.id
-    }" class="cart-item-name">
+            <a href="product-detail.html?id=${
+              item.product.id
+            }" class="cart-item-name">
                 ${item.product.name}
             </a>
             <p class="cart-item-specs">${item.product.specs.processor}</p>
-            <p class="cart-item-price">₹${item.product.price.toLocaleString('en-IN')}</p>
+            <p class="cart-item-price">₹${item.product.price.toLocaleString(
+              "en-IN"
+            )}</p>
         </div>
         <div class="cart-item-actions">
             <button 
@@ -148,8 +160,9 @@ function renderCartItem(item, index = 0) {
             <div class="quantity-controls">
                 <button 
                     class="btn btn-outline quantity-btn" 
-                    onclick="handleUpdateQuantity('${item.product.id}', ${item.quantity - 1
-    })"
+                    onclick="handleUpdateQuantity('${item.product.id}', ${
+    item.quantity - 1
+  })"
                     aria-label="Decrease quantity"
                 >
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -159,8 +172,9 @@ function renderCartItem(item, index = 0) {
                 <span class="quantity-value">${item.quantity}</span>
                 <button 
                     class="btn btn-outline quantity-btn" 
-                    onclick="handleUpdateQuantity('${item.product.id}', ${item.quantity + 1
-    })"
+                    onclick="handleUpdateQuantity('${item.product.id}', ${
+    item.quantity + 1
+  })"
                     aria-label="Increase quantity"
                 >
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -447,11 +461,12 @@ function updateOrderSummary() {
   const taxEl = document.getElementById("tax");
   const totalEl = document.getElementById("total");
 
-  if (subtotalEl) subtotalEl.textContent = `₹${totalPrice.toLocaleString('en-IN')}`;
+  if (subtotalEl)
+    subtotalEl.textContent = `₹${totalPrice.toLocaleString("en-IN")}`;
   if (shippingEl)
     shippingEl.textContent = shipping === 0 ? "Free" : `₹${shipping}`;
-  if (taxEl) taxEl.textContent = `₹${tax.toLocaleString('en-IN')}`;
-  if (totalEl) totalEl.textContent = `₹${total.toLocaleString('en-IN')}`;
+  if (taxEl) taxEl.textContent = `₹${tax.toLocaleString("en-IN")}`;
+  if (totalEl) totalEl.textContent = `₹${total.toLocaleString("en-IN")}`;
 }
 
 // Load Product Detail Page
@@ -503,18 +518,22 @@ function renderProductDetail(product) {
       <!-- SUB IMAGES (BEIGHT BELOW RED BOX) -->
       <div class="product-detail-sub-images">
       ${product.images
-      .map(
-        (img, index) => `
+        .map(
+          (img, index) => `
         <div
           style="
             width:80px;
             height:80px;
+            min-width:80px;
+            max-width:80px;
+            flex-shrink:0;
             background:#e5e7eb;
             border-radius:10px;
             display:flex;
             align-items:center;
             justify-content:center;
             cursor:pointer;
+            overflow:hidden;
           "
         >
           <img
@@ -522,11 +541,12 @@ function renderProductDetail(product) {
           src="${img}" 
           class="product-thumbnail ${index === 0 ? "active" : ""}"
           onclick="changeProductImage('${img}', this)"
+          style="width:100%;height:100%;object-fit:contain;display:block;"
         />
         </div>
       `
-      )
-      .join("")}
+        )
+        .join("")}
       </div>
     </div>
 
@@ -546,12 +566,13 @@ function renderProductDetail(product) {
         <span class="product-detail-price">
           ₹${product.price.toLocaleString("en-IN")}
         </span>
-        ${hasOriginalPrice
-      ? `<span class="product-detail-price-original">
+        ${
+          hasOriginalPrice
+            ? `<span class="product-detail-price-original">
                 ₹${product.originalPrice.toLocaleString("en-IN")}
               </span>`
-      : ""
-    }
+            : ""
+        }
       </div>
 
       <p class="product-detail-description">
@@ -612,7 +633,7 @@ function changeProductImage(src, el) {
 
   document
     .querySelectorAll(".product-thumbnail")
-    .forEach(t => t.classList.remove("active"));
+    .forEach((t) => t.classList.remove("active"));
 
   el.classList.add("active");
 }
