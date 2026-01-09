@@ -7,7 +7,6 @@ function renderProductCard(product, index = 0) {
   const card = document.createElement("div");
   card.className = "animate-fade-up";
   card.style.animationDelay = `${index * 0.1}s`;
-  console.log(product.images[0]);
 
   card.innerHTML = `
         <a href="product-detail.html?id=${product.id}" class="product-card">
@@ -273,6 +272,7 @@ function loadHomePage() {
   if (featuredGrid) {
     featuredGrid.innerHTML = "";
     featuredProducts.forEach((product, index) => {
+      console.log(product.images);
       featuredGrid.appendChild(renderProductCard(product, index));
     });
   }
