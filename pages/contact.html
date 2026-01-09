@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - ASUS Store</title>
+    <meta
+      name="description"
+      content="Get in touch with ASUS India. Contact our support team, visit our service centers, or send us a message."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="../index.html" class="logo">
+            <span>ASUS India</span>
+          </a>
+
+          <nav class="nav-desktop">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Products</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="support.html" class="nav-link">Support</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </nav>
+
+          <div class="header-actions-desktop">
+            <button class="icon-button" aria-label="Search">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </button>
+            <a href="admin.html" class="icon-button" aria-label="Admin">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </a>
+            <a
+              href="cart.html"
+              class="icon-button cart-button"
+              aria-label="Shopping Cart"
+            >
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                ></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span class="cart-badge" id="cartBadge">0</span>
+            </a>
+          </div>
+
+          <div class="header-actions-mobile">
+            <a href="cart.html" class="mobile-cart">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                ></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span class="cart-badge" id="cartBadgeMobile">0</span>
+            </a>
+            <button
+              class="menu-toggle"
+              id="menuToggle"
+              aria-label="Toggle Menu"
+            >
+              <svg
+                class="icon menu-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+              <svg
+                class="icon close-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+          <a href="../index.html" class="mobile-nav-link">Home</a>
+          <a href="products.html" class="mobile-nav-link">Products</a>
+          <a href="about.html" class="mobile-nav-link">About</a>
+          <a href="support.html" class="mobile-nav-link">Support</a>
+          <a href="contact.html" class="mobile-nav-link active">Contact</a>
+          <a href="admin.html" class="mobile-nav-link">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Page Header -->
+      <section class="content-header">
+        <div class="container">
+          <div class="animate-fade-up">
+            <h1 class="content-title">Contact Us</h1>
+            <p class="content-description">
+              We're here to help. Reach out to us through any of the channels below
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Information -->
+      <div class="container content-page">
+        <!-- Contact Methods -->
+        <section class="content-section animate-fade-up" style="max-width: 100%; margin-bottom: 4rem;">
+          <div class="trust-grid">
+            <div class="trust-item">
+              <div class="trust-icon-wrapper">
+                <svg
+                  class="trust-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <h3 class="trust-title">Phone Support</h3>
+              <p class="trust-description">
+                1800-209-0365<br />
+                Mon-Fri: 9:00 AM - 6:00 PM IST
+              </p>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon-wrapper">
+                <svg
+                  class="trust-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <h3 class="trust-title">Email Support</h3>
+              <p class="trust-description">
+                support@asus.in<br />
+                Response within 24 hours
+              </p>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon-wrapper">
+                <svg
+                  class="trust-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <h3 class="trust-title">Service Centers</h3>
+              <p class="trust-description">
+                Find authorized service centers<br />
+                across India
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section
+          class="content-section animate-fade-up"
+          style="animation-delay: 0.1s; max-width: 100%;"
+        >
+          <h2 class="content-section-title" style="text-align: center; margin-bottom: 2rem;">
+            Send Us a Message
+          </h2>
+
+          <form id="contactForm" style="max-width: 48rem; margin: 0 auto;">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="your.email@example.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form-input"
+                placeholder="+91 XXXXX XXXXX"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject *</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="form-input"
+                placeholder="What is this regarding?"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="category" class="form-label">Category *</label>
+              <select id="category" name="category" class="select" required>
+                <option value="">Select a category</option>
+                <option value="product-inquiry">Product Inquiry</option>
+                <option value="technical-support">Technical Support</option>
+                <option value="warranty">Warranty & Repairs</option>
+                <option value="sales">Sales & Orders</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                placeholder="Please provide details about your inquiry..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              Send Message
+              <svg
+                class="icon-sm"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </section>
+
+        <!-- Office Locations -->
+        <section
+          class="content-section animate-fade-up"
+          style="animation-delay: 0.2s; max-width: 100%; margin-top: 4rem;"
+        >
+          <h2 class="content-section-title" style="text-align: center; margin-bottom: 2rem;">
+            Our Offices
+          </h2>
+
+          <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 64rem; margin: 0 auto;">
+            <div style="background-color: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem;">
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--foreground);">
+                Corporate Office - New Delhi
+              </h3>
+              <p style="color: var(--muted-foreground); line-height: 1.6; margin-bottom: 0.5rem;">
+                <strong>Address:</strong> 5th Floor, Tower A, DLF Cyber City,<br />
+                Phase III, Gurgaon, Haryana 122002
+              </p>
+              <p style="color: var(--muted-foreground); line-height: 1.6; margin-bottom: 0.5rem;">
+                <strong>Phone:</strong> +91-124-4604000
+              </p>
+              <p style="color: var(--muted-foreground); line-height: 1.6;">
+                <strong>Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM
+              </p>
+            </div>
+
+            <div style="background-color: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem;">
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--foreground);">
+                Regional Office - Mumbai
+              </h3>
+              <p style="color: var(--muted-foreground); line-height: 1.6; margin-bottom: 0.5rem;">
+                <strong>Address:</strong> Unit 301, 3rd Floor, Matulya Centre,<br />
+                Senapati Bapat Marg, Lower Parel, Mumbai 400013
+              </p>
+              <p style="color: var(--muted-foreground); line-height: 1.6; margin-bottom: 0.5rem;">
+                <strong>Phone:</strong> +91-22-66618000
+              </p>
+              <p style="color: var(--muted-foreground); line-height: 1.6;">
+                <strong>Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM
+              </p>
+            </div>
+
+            <div style="background-color: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem;">
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--foreground);">
+                Regional Office - Bangalore
+              </h3>
+              <p style="color: var(--muted-foreground); line-height: 1.6; margin-bottom: 0.5rem;">
+                <strong>Address:</strong> 4th Floor, Salarpuria Touchstone,<br />
+                Outer Ring Road, Marathahalli, Bangalore 560037
+              </p>
+              <p style="color: var(--muted-foreground); line-height: 1.6; margin-bottom: 0.5rem;">
+                <strong>Phone:</strong> +91-80-41731000
+              </p>
+              <p style="color: var(--muted-foreground); line-height: 1.6;">
+                <strong>Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Additional Info -->
+        <section
+          class="content-section animate-fade-up"
+          style="animation-delay: 0.3s"
+        >
+          <h2 class="content-section-title">Business Inquiries</h2>
+          <p class="content-text">
+            For partnership opportunities, bulk orders, or corporate sales, please contact our business development team at <strong>business@asus.in</strong>
+          </p>
+          <p class="content-text">
+            For media and press inquiries, reach out to our PR team at <strong>pr@asus.in</strong>
+          </p>
+          <div style="margin-top: 2rem">
+            <a
+              href="support.html"
+              class="btn btn-outline btn-lg"
+            >
+              Visit Support Center
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="../index.html" class="footer-logo">
+              <span>ASUS</span>
+            </a>
+            <p class="footer-tagline">
+              In Search of Incredible. Pushing the boundaries of technology
+              since 1989.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Products</h3>
+            <ul class="footer-links">
+              <li><a href="products.html?category=gaming">Gaming</a></li>
+              <li><a href="products.html?category=business">Business</a></li>
+              <li><a href="products.html?category=creator">Creator</a></li>
+              <li><a href="products.html?category=student">Student</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Support</h3>
+            <ul class="footer-links">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="warranty.html">Warranty</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="warranty.html">Returns</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Company</h3>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html">Careers</a></li>
+              <li><a href="about.html">Press</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2024 ASUS Store Demo. All rights reserved. This is a demo project.
+          </p>
+          <div class="footer-legal">
+            <a href="faq.html">Privacy Policy</a>
+            <a href="faq.html">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/state.js"></script>
+    <script src="../js/ui.js"></script>
+    <script src="../js/main.js"></script>
+    
+    <script>
+
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          phone: document.getElementById('phone').value,
+          subject: document.getElementById('subject').value,
+          category: document.getElementById('category').value,
+          message: document.getElementById('message').value
+        };
+        
+        // Show success toast
+        if (window.showToast) {
+          window.showToast('Message Sent!', 'We\'ll get back to you within 24 hours.');
+        }
+        
+        this.reset();
+        
+        console.log('Contact form submitted:', formData);
+      });
+    </script>
+  </body>
+</html>
