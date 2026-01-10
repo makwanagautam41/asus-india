@@ -8,8 +8,16 @@ function renderProductCard(product, index = 0) {
   card.className = "animate-fade-up";
   card.style.animationDelay = `${index * 0.1}s`;
 
+  const isIndexPage =
+    window.location.pathname === "/" ||
+    window.location.pathname.endsWith("index.html");
+
+  const productLink = isIndexPage
+    ? `pages/product-detail.html?id=${product.id}`
+    : `product-detail.html?id=${product.id}`;
+
   card.innerHTML = `
-        <a href="product-detail.html?id=${product.id}" class="product-card">
+        <a href="${productLink}" class="product-card">
             <div class="product-image-wrapper">
                 ${
                   hasProductImages
@@ -272,7 +280,6 @@ function loadHomePage() {
   if (featuredGrid) {
     featuredGrid.innerHTML = "";
     featuredProducts.forEach((product, index) => {
-      console.log(product.images);
       featuredGrid.appendChild(renderProductCard(product, index));
     });
   }
